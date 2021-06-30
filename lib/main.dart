@@ -1,30 +1,48 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(BestPhoto());
+  runApp(RowComlunChallange());
 }
 
-class BestPhoto extends StatelessWidget {
-  const BestPhoto({Key? key}) : super(key: key);
+class RowComlunChallange extends StatelessWidget {
+  const RowComlunChallange({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.amber[300],
-          centerTitle: true,
-          title: Text(
-            "Best Photo By Raj",
-            style: TextStyle(fontStyle: FontStyle.italic),
-          ),
-        ),
-        backgroundColor: Colors.yellow[200],
-        body: Center(
-          child: Image.asset(
-            "assets/images/best_photo.jpg",
-            height: 500,
-            width: 500,
+        backgroundColor: Colors.teal[700],
+        body: SafeArea(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                color: Colors.red[900],
+                width: 100,
+                height: double.infinity,
+              ),
+              Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      color: Colors.yellow[400],
+                      width: 100,
+                      height: 100,
+                    ),
+                    Container(
+                      color: Colors.green[400],
+                      width: 100,
+                      height: 100,
+                    ),
+                  ]),
+              Container(
+                color: Colors.blue[600],
+                width: 100,
+                height: double.infinity,
+              )
+            ],
           ),
         ),
       ),
