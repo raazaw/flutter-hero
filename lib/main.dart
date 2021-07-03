@@ -11,41 +11,261 @@ class RowComlunChallange extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal[700],
-        body: SafeArea(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Container(
-                color: Colors.red[900],
-                width: 100,
-                height: double.infinity,
-              ),
-              Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      color: Colors.yellow[400],
-                      width: 100,
-                      height: 100,
-                    ),
-                    Container(
-                      color: Colors.green[400],
-                      width: 100,
-                      height: 100,
-                    ),
-                  ]),
-              Container(
-                color: Colors.blue[600],
-                width: 100,
-                height: double.infinity,
-              )
-            ],
+          appBar: AppBar(
+            centerTitle: true,
+            titleSpacing: 10.0,
+            title: Text("Home"),
+            backgroundColor: Colors.blue,
           ),
-        ),
-      ),
+          body: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Stack(
+                    children: [
+                      Container(
+                        width: 185,
+                        height: 240,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                      Column(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(42),
+                            child: Image.asset(
+                              "assets/images/best_photo.jpg",
+                              height: 150,
+                              width: 150,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 20,
+                            height: 20,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Text(
+                              "Mother Teresa",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold),
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                  Stack(
+                    children: [
+                      Container(
+                        width: 185,
+                        height: 240,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                      Column(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(42),
+                            child: Image.asset(
+                              "assets/images/best_photo.jpg",
+                              height: 150,
+                              width: 150,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 20,
+                            height: 20,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Text(
+                              "Abraham Lincoln",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold),
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 20,
+                width: double.infinity,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Stack(
+                    children: [
+                      Container(
+                        width: 185,
+                        height: 240,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                      Column(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(42),
+                            child: Image.asset(
+                              "assets/images/best_photo.jpg",
+                              height: 150,
+                              width: 150,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 20,
+                            height: 20,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Text(
+                              "Mahatma Gandhi",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold),
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                  Stack(
+                    children: [
+                      Container(
+                        width: 185,
+                        height: 240,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                      Column(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(42),
+                            child: Image.asset(
+                              "assets/images/best_photo.jpg",
+                              height: 150,
+                              width: 150,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 20,
+                            height: 20,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Text(
+                              "Martin Luther ",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold),
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 20,
+                width: double.infinity,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Stack(
+                    children: [
+                      Container(
+                        width: 185,
+                        height: 240,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                      Column(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(42),
+                            child: Image.asset(
+                              "assets/images/best_photo.jpg",
+                              height: 150,
+                              width: 150,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 20,
+                            height: 20,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Text(
+                              "Billy Graham",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold),
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                  Stack(
+                    children: [
+                      Container(
+                        width: 185,
+                        height: 240,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                      Column(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(42),
+                            child: Image.asset(
+                              "assets/images/best_photo.jpg",
+                              height: 150,
+                              width: 150,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 20,
+                            height: 20,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Text(
+                              "Nelson Mandela",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold),
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  )
+                ],
+              ),
+            ],
+          )),
     );
   }
 }
