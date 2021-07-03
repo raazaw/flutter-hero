@@ -11,261 +11,112 @@ class RowComlunChallange extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-          appBar: AppBar(
-            centerTitle: true,
-            titleSpacing: 10.0,
-            title: Text("Home"),
-            backgroundColor: Colors.blue,
-          ),
-          body: Column(
+        body: SafeArea(
+          child: Column(
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Stack(
+              SizedBox(
+                width: double.infinity,
+                height: 20,
+                child: Row(
+                  children: [
+                    Text(
+                      "                                           online",
+                    ),
+                    Icon(
+                      Icons.circle,
+                      color: Colors.green,
+                      size: 15,
+                    )
+                  ],
+                ),
+              ),
+              Center(
+                child: Padding(
+                  padding: const EdgeInsets.all(24.0),
+                  child: Stack(
                     children: [
                       Container(
-                        width: 185,
-                        height: 240,
+                        height: 500,
+                        width: 450,
                         decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          borderRadius: BorderRadius.circular(8),
+                          borderRadius: BorderRadius.circular(22),
+                          color: Colors.purple[900],
                         ),
                       ),
-                      Column(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(42),
+                      Column(children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(45),
                             child: Image.asset(
-                              "assets/images/best_photo.jpg",
-                              height: 150,
-                              width: 150,
+                              "assets/images/shawnMendes.jpg",
+                              height: 450,
+                              width: 450,
                             ),
                           ),
-                          SizedBox(
-                            width: 20,
-                            height: 20,
+                        ),
+                        Text(
+                          "Gore Pandey, 26",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w900,
                           ),
-                          Padding(
-                            padding: const EdgeInsets.all(16.0),
-                            child: Text(
-                              "Mother Teresa",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold),
-                            ),
-                          )
-                        ],
-                      )
+                        )
+                      ]),
                     ],
                   ),
-                  Stack(
-                    children: [
-                      Container(
-                        width: 185,
-                        height: 240,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                      ),
-                      Column(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(42),
-                            child: Image.asset(
-                              "assets/images/best_photo.jpg",
-                              height: 150,
-                              width: 150,
-                            ),
-                          ),
-                          SizedBox(
-                            width: 20,
-                            height: 20,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(16.0),
-                            child: Text(
-                              "Abraham Lincoln",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold),
-                            ),
-                          )
-                        ],
-                      )
-                    ],
-                  )
-                ],
+                ),
+              ),
+              Text(
+                "Managing Director",
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              Text(
+                "Gore Traders",
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w400,
+                ),
               ),
               SizedBox(
-                height: 20,
+                height: 40,
                 width: double.infinity,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Stack(
-                    children: [
-                      Container(
-                        width: 185,
-                        height: 240,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                      ),
-                      Column(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(42),
-                            child: Image.asset(
-                              "assets/images/best_photo.jpg",
-                              height: 150,
-                              width: 150,
-                            ),
-                          ),
-                          SizedBox(
-                            width: 20,
-                            height: 20,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(16.0),
-                            child: Text(
-                              "Mahatma Gandhi",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold),
-                            ),
-                          )
-                        ],
-                      )
-                    ],
-                  ),
-                  Stack(
-                    children: [
-                      Container(
-                        width: 185,
-                        height: 240,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                      ),
-                      Column(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(42),
-                            child: Image.asset(
-                              "assets/images/best_photo.jpg",
-                              height: 150,
-                              width: 150,
-                            ),
-                          ),
-                          SizedBox(
-                            width: 20,
-                            height: 20,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(16.0),
-                            child: Text(
-                              "Martin Luther ",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold),
-                            ),
-                          )
-                        ],
-                      )
-                    ],
-                  )
-                ],
+              Text(
+                "Wanna connect with me?",
+                style: TextStyle(
+                  fontSize: 22,
+                ),
               ),
               SizedBox(
-                height: 20,
+                height: 10,
                 width: double.infinity,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Stack(
-                    children: [
-                      Container(
-                        width: 185,
-                        height: 240,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                      ),
-                      Column(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(42),
-                            child: Image.asset(
-                              "assets/images/best_photo.jpg",
-                              height: 150,
-                              width: 150,
-                            ),
-                          ),
-                          SizedBox(
-                            width: 20,
-                            height: 20,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(16.0),
-                            child: Text(
-                              "Billy Graham",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold),
-                            ),
-                          )
-                        ],
-                      )
-                    ],
+              Container(
+                height: 50,
+                width: 200,
+                decoration: BoxDecoration(
+                  color: Colors.purple[600],
+                  borderRadius: BorderRadius.circular(22),
+                ),
+                child: Center(
+                  child: Text(
+                    "Click Here!",
+                    style: TextStyle(
+                      fontSize: 26,
+                      color: Colors.white,
+                    ),
                   ),
-                  Stack(
-                    children: [
-                      Container(
-                        width: 185,
-                        height: 240,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                      ),
-                      Column(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(42),
-                            child: Image.asset(
-                              "assets/images/best_photo.jpg",
-                              height: 150,
-                              width: 150,
-                            ),
-                          ),
-                          SizedBox(
-                            width: 20,
-                            height: 20,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(16.0),
-                            child: Text(
-                              "Nelson Mandela",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold),
-                            ),
-                          )
-                        ],
-                      )
-                    ],
-                  )
-                ],
+                ),
               ),
             ],
-          )),
+          ),
+        ),
+      ),
     );
   }
 }
