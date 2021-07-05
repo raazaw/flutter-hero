@@ -1,95 +1,222 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(RowComlunChallange());
+  runApp(LangurBurja());
 }
 
-class RowComlunChallange extends StatelessWidget {
-  const RowComlunChallange({Key? key}) : super(key: key);
+class LangurBurja extends StatefulWidget {
+  const LangurBurja({Key? key}) : super(key: key);
+
+  @override
+  _LangurBurjaState createState() => _LangurBurjaState();
+}
+
+class _LangurBurjaState extends State<LangurBurja> {
+  String randomG() {
+    Random random = Random();
+    int number = random.nextInt(6) + 1;
+
+    switch (number) {
+      case 1:
+        {
+          return "clubs";
+        }
+
+      case 2:
+        {
+          return "diamond";
+        }
+
+        
+      case 3:
+        {
+          return "flag";
+        }
+
+        
+      case 4:
+        {
+          return "heart";
+        }
+
+       
+      case 5:
+        {
+          return "king";
+        }
+
+        
+      case 6:
+        {
+          return "spade";
+        }
+
+       
+      default:
+        {
+          return "-1";
+        }
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(
+          title: Text("Langur Burja Game"),
+          centerTitle: true,
+        ),
         body: SafeArea(
           child: Column(
             children: [
               SizedBox(
-                width: double.infinity,
                 height: 20,
-                child: Row(
-                  children: [
-                    Text(
-                      "                                           online",
+                width: double.infinity,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {
+                      setState(() {});
+                    },
+                    style: ElevatedButton.styleFrom(
+                      elevation: 10,
+                      primary: Colors.white,
                     ),
-                    Icon(
-                      Icons.circle,
-                      color: Colors.green,
-                      size: 15,
-                    )
-                  ],
-                ),
-              ),
-              Center(
-                child: Padding(
-                  padding: const EdgeInsets.all(24.0),
-                  child: Stack(
-                    children: [
-                      Container(
-                        height: 500,
-                        width: 450,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(22),
-                          color: Colors.purple[900],
-                        ),
-                      ),
-                      Column(children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(45),
-                            child: Image.asset(
-                              "assets/images/shawnMendes.jpg",
-                              height: 450,
-                              width: 450,
-                            ),
-                          ),
-                        ),
-                        Text(
-                          "Gore Pandey, 26",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 24,
-                            fontWeight: FontWeight.w900,
-                          ),
-                        )
-                      ]),
-                    ],
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      child: Image.asset("assets/images/clubs.png"),
+                    ),
                   ),
-                ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      elevation: 10,
+                      primary: Colors.white,
+                    ),
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      child: Image.asset("assets/images/clubs.png"),
+                    ),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      elevation: 10,
+                      primary: Colors.white,
+                    ),
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      child: Image.asset("assets/images/clubs.png"),
+                    ),
+                  ),
+                ],
               ),
-              Text(
-                "Managing Director",
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.w700,
-                ),
+              SizedBox(
+                height: 20,
+                width: double.infinity,
               ),
-              Text(
-                "Gore Traders",
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w400,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      elevation: 10,
+                      primary: Colors.white,
+                    ),
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      child: Image.asset("assets/images/clubs.png"),
+                    ),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      elevation: 10,
+                      primary: Colors.white,
+                    ),
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      child: Image.asset("assets/images/clubs.png"),
+                    ),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      elevation: 10,
+                      primary: Colors.white,
+                    ),
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      child: Image.asset("assets/images/clubs.png"),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 40,
+                width: double.infinity,
+              ),
+              Container(
+                height: 60,
+                width: 200,
+                decoration: BoxDecoration(
+                  color: Colors.teal,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Center(
+                  child: Text(
+                    "Roll Dice!!",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
               ),
               SizedBox(
                 height: 40,
                 width: double.infinity,
               ),
+              Row(
+                children: [
+                  
+                  Expanded(child: Image.asset("assets/images/clubs.png")),
+                  Expanded(child: Image.asset("assets/images/clubs.png")),
+                  Expanded(child: Image.asset("assets/images/clubs.png")),
+                  Expanded(child: Image.asset("assets/images/clubs.png")),
+                  Expanded(child: Image.asset("assets/images/clubs.png")),
+                  Expanded(child: Image.asset("assets/images/clubs.png")),
+                ],
+              ),
+            ],
+          ),
+        ),
+        bottomSheet: Container(
+          height: 170,
+          width: double.infinity,
+          decoration: BoxDecoration(
+            color: Colors.lime[800],
+          ),
+          child: Column(
+            children: [
               Text(
-                "Wanna connect with me?",
+                "You won",
                 style: TextStyle(
-                  fontSize: 22,
+                  color: Colors.white,
+                  fontSize: 60,
+                  fontWeight: FontWeight.w600,
                 ),
               ),
               SizedBox(
@@ -97,22 +224,23 @@ class RowComlunChallange extends StatelessWidget {
                 width: double.infinity,
               ),
               Container(
-                height: 50,
+                height: 60,
                 width: 200,
                 decoration: BoxDecoration(
-                  color: Colors.purple[600],
-                  borderRadius: BorderRadius.circular(22),
+                  color: Colors.teal[700],
+                  borderRadius: BorderRadius.circular(20),
                 ),
                 child: Center(
                   child: Text(
-                    "Click Here!",
+                    "Restart?",
                     style: TextStyle(
-                      fontSize: 26,
                       color: Colors.white,
+                      fontSize: 32,
+                      fontWeight: FontWeight.w400,
                     ),
                   ),
                 ),
-              ),
+              )
             ],
           ),
         ),
